@@ -12,8 +12,6 @@ StockSentimentMonitor 是一个基于 Python 的股票舆情监控系统。它�
 ## 安装
 
 1. 克隆或下载此仓库到本地：
-
-```bash
 git clone https://github.com/your_username/StockSentimentMonitor.git
 2. 使用pip安装依赖：
 pip install -r requirements.txt（未更新requirement，不知咋整）
