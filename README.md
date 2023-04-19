@@ -1,40 +1,33 @@
-# ��Ʊ������ϵͳ
+﻿# 股票舆情监控
 
-����ĿΪ��Ʊ������ϵͳ������ץȡ�ͷ�����Ʊ������ţ������������鷢����ָ�����䡣
+StockSentimentMonitor 是一个基于 Python 的股票舆情监控系统。它可以根据提供的股票名称抓取近期的舆情信息，对负面舆情进行筛选，并将舆情数据存储到数据库中。此外，它还可以通过邮件发送舆情监控结果。
 
-## ��װ
+## 功能
 
-1. ��¡���ֿ⵽���أ�
-git clone https://github.com/yourusername/stock-sentiment-monitor.git
-2. ������ĿĿ¼��
-cd stock-sentiment-monitor
-3. ��װ��Ŀ������
-pip install -r requirements.txt
-## ʹ��
+- 抓取股票的舆情信息
+- 对负面舆情进行筛选
+- 将舆情信息存储到数据库中
+- 通过邮件发送舆情监控结果
 
-1. �� `config.py` �ļ��������ʼ������������Ϣ��
+## 安装
 
-2. ����Ʊ�ֲ���Ϣ������Ϊ `��Ʊ�ֲ�ͳ��.xlsx` �� Excel �ļ��С�
+1. 克隆或下载此仓库到本地：
 
-3. ����������
-python main.py
+```bash
+git clone https://github.com/your_username/StockSentimentMonitor.git
+2. 使用pip安装依赖：
+pip install -r requirements.txt（未更新requirement，不知咋整）
 
-## ����
+## 使用方法
 
-1. ץȡ���˲ƾ�����Ѷ�ƾ�����ָ����Ʊ��ص����š�
+1. 在src/config.py文件中配置邮件服务器信息（如：EMAIL_HOST，EMAIL_PORT，EMAIL_USER，EMAIL_PASSWORD）、收件人（TO_EMAIL）、监控的股票清单（STOCK_LIST）。
+2. 运行main.py文件，程序将自动抓取股票舆情信息并通过邮件发送负面舆情监控结果。
 
-2. �����ű�������ݽ�����з�����
+```bash
+python src/main.py
 
-3. ���������鷢����ָ�����䡣
+## 贡献者
+无
 
-## ע������
-
-1. ����Ŀ����ѧϰ����ʹ�ã�����������ҵĿ�ġ�
-
-2. ʹ��ʱ��������ط��ɷ��棬��������֪ʶ��Ȩ��
-
-3. ������վ�ṹ���ܷ����仯������Ŀ������Ҫ������Ӧ��ά���͸��¡�
-
-## ��Դ����
-
-����Ŀ���� MIT ���ɡ�
+## 许可证
+本项目遵循 MIT 许可证。
