@@ -23,7 +23,6 @@ pip install -r requirements.txt（未更新requirement，不知咋整）
 1. 在src/config.py文件中配置邮件服务器信息（如：EMAIL_HOST，EMAIL_PORT，EMAIL_USER，EMAIL_PASSWORD）、收件人（TO_EMAIL）、监控的股票清单（STOCK_LIST）。
 2. 运行main.py文件，程序将自动抓取股票舆情信息并通过邮件发送负面舆情监控结果。
 
-```bash
 python src/main.py
 
 ## 贡献者
